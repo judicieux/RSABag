@@ -59,7 +59,6 @@ b't0r0nt0_ch4ll{R54_34zY}'
 from Crypto.Util.number import bytes_to_long, long_to_bytes, getPrime
 from Crypto.Random import get_random_bytes 
 import Crypto
-import libnum
 
 BITS = 124
 flag = "t0r0nt0_ch4ll{R54_34zY}"
