@@ -56,18 +56,19 @@ b't0r0nt0_ch4ll{R54_34zY}'
 ```
 ## Script
 ```py
-from Crypto.Util.number import bytes_to_long, long_to_bytes, inverse
+from Crypto.Util.number import bytes_to_long, long_to_bytes, getPrime
 from Crypto.Random import get_random_bytes 
 import Crypto
+import libnum
 
-bits = 124
+BITS = 124
 flag = "t0r0nt0_ch4ll{R54_34zY}"
 
-p = Crypto.Util.number.getPrime(bits, randfunc=get_random_bytes)
-q = Crypto.Util.number.getPrime(bits, randfunc=get_random_bytes)
+p = getPrime(BITS, randfunc=get_random_bytes)
+q = getPrime(BITS, randfunc=get_random_bytes)
 
 N = p * q
-PHI = (p - 1) * (q - 1)
+PHI = (p-1) * (q-1)
 
 e = 65537
 d = pow(e, -1, PHI)
