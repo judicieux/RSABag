@@ -7,7 +7,7 @@ e = 65537
 c = 4411661085097543909849318376631746681150427615454967763654513675784095561
 ```
 
-**Solve**
+# Solve
 On doit casser N en trouvant les nombres premiers qui composent la valeur.
 En gros on va factoriser N jusqu'aux valeurs maximales.
 Le tool msieve permet de faire ça avec la commande suivante: 
