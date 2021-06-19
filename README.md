@@ -59,9 +59,10 @@ b't0r0nt0_ch4ll{R54_34zY}'
 from Crypto.Util.number import bytes_to_long, long_to_bytes, getPrime
 from Crypto.Random import get_random_bytes 
 import Crypto
+import binascii
 
 BITS = 124
-flag = "t0r0nt0_ch4ll{R54_34zY}"
+flag = "t0r0nt0_ch4ll{R54_34zY}".ljust(30, u'\0')
 
 p = getPrime(BITS, randfunc=get_random_bytes)
 q = getPrime(BITS, randfunc=get_random_bytes)
@@ -73,9 +74,14 @@ e = 65537
 d = pow(e, -1, PHI)
 
 m = bytes_to_long(flag.encode('utf-8'))
-
 c = pow(m, e, N)
 final = pow(c, d, N)
 
-print("Message=%s\np=%s\nq=%s\n\nd=%d\ne=%d\nN=%s\n\nPrivate key (d,n)\nPublic key (e,n)\n\ncipher=%s\ndecipher=%s" % (flag, p, q, d, e, N, c, (long_to_bytes(final))))
+print("p = %s" % p)
+print("q = %s" % q)
+print("d = %s" % d)
+print("e = %s" % e)
+print("N = %s" % N)
+print("c = %s" % c)
+print("flag = %s" % long_to_bytes(final))
 ```
