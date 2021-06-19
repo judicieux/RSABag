@@ -31,7 +31,7 @@ Le PHI:
 ```py
 PHI = 299414541696079057892313324025675176506083905189014514000783135486537670176
 ```
-Maintenant on trouve ```e⁻¹ (mod PHI) (et où (d×e) (mod PHI)=1)``` avec:
+Maintenant on trouve **e⁻¹(mod PHI)** avec:
 ```py
 >>> import libnum
 >>> PHI = 299414541696079057892313324025675176506083905189014514000783135486537670176
@@ -43,7 +43,7 @@ Clé de déchiffrement:
 ```py
 d = 198685307594500543947370403719312567726216991207486644176267723258221107745
 ```
-On a plus qu'à déchiffrer le cipher:
+On a plus qu'à déchiffrer le cipher **Message = Cipherᵈ(mod N)**:
 ```py
 >>> from Crypto.Util.number import long_to_bytes
 >>> d = 198685307594500543947370403719312567726216991207486644176267723258221107745
