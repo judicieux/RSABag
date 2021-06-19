@@ -83,5 +83,5 @@ print("d = %s" % d)
 print("e = %s" % e)
 print("N = %s" % N)
 print("c = %s" % c)
-print("flag = %s" % long_to_bytes(final))
+print("flag = %s" % long_to_bytes(final)[:-7])
 ```
