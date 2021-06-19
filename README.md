@@ -20,18 +20,19 @@ On a nos deux nombres premiers (large primes):
 ```py
 p = 16635750863390806321005018553115635153, q = 17998258338611020155099256716570289739
 ```
-Maintenant on calcule le ```PHI (Φ)``` de cette manière:
+On calcule le ```PHI (Φ)``` de cette manière:
 ```py
 >>> p = 16635750863390806321005018553115635153
 >>> q = 17998258338611020155099256716570289739
 >>> print((p - 1) * (q - 1))
 299414541696079057892313324025675176506083905189014514000783135486537670176
 ```
-Le PHI:
+```PHI```:
 ```py
 PHI = 299414541696079057892313324025675176506083905189014514000783135486537670176
 ```
-Maintenant on trouve **e⁻¹(mod PHI)** avec:
+Maintenant on trouve la clé de déchiffrement.<br/>
+**e⁻¹(mod PHI)**:
 ```py
 >>> import libnum
 >>> PHI = 299414541696079057892313324025675176506083905189014514000783135486537670176
@@ -39,11 +40,12 @@ Maintenant on trouve **e⁻¹(mod PHI)** avec:
 >>> print(libnum.invmod(e, PHI))
 198685307594500543947370403719312567726216991207486644176267723258221107745
 ```
-Clé de déchiffrement:
+```Clé de déchiffrement```:
 ```py
 d = 198685307594500543947370403719312567726216991207486644176267723258221107745
 ```
-On a plus qu'à déchiffrer le cipher **Message = Cipherᵈ(mod N)**:
+On a plus qu'à déchiffrer le cipher pour avoir le message.<br/>
+**Message = Cipherᵈ(mod N)**:
 ```py
 >>> from Crypto.Util.number import long_to_bytes
 >>> d = 198685307594500543947370403719312567726216991207486644176267723258221107745
