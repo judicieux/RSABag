@@ -6,10 +6,8 @@ N = 299414541696079057892313324025675176540717914391016340476887410756223595067
 e = 65537
 c = 4411661085097543909849318376631746681150427615454967763654513675784095561
 ```
-
 ## Solve
-On doit casser ``N`` en trouvant les nombres premiers qui composent la valeur.
-En gros on va factoriser N jusqu'aux valeurs maximales.
+On doit factoriser ``N`` en trouvant les nombres premiers (large primes) qui composent la valeur.
 Le tool msieve permet de faire ça avec la commande suivante: 
 ```py
 ./msieve -q 299414541696079057892313324025675176540717914391016340476887410756223595067
@@ -22,7 +20,7 @@ On a nos deux nombres premiers (large primes):
 ```py
 p = 16635750863390806321005018553115635153, q = 17998258338611020155099256716570289739
 ```
-Maintenant on calcule le PHI (Φ) de cette manière:
+Maintenant on calcule le ```PHI (Φ)``` de cette manière:
 ```py
 >>> p = 16635750863390806321005018553115635153
 >>> q = 17998258338611020155099256716570289739
@@ -33,7 +31,7 @@ Le PHI:
 ```py
 PHI = 299414541696079057892313324025675176506083905189014514000783135486537670176
 ```
-Maintenant on trouve e⁻¹ (mod PHI) (et où (d×e) (mod PHI)=1), avec:
+Maintenant on trouve ```e⁻¹ (mod PHI) (et où (d×e) (mod PHI)=1)``` avec:
 ```py
 >>> import libnum
 >>> PHI = 299414541696079057892313324025675176506083905189014514000783135486537670176
