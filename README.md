@@ -6,7 +6,7 @@ Ensuite on déterminera **ΦN = (p−1) * (q−1)**.
 Puis on dérivera **d** de **e** et **PHI**.
 Ensuite on déchiffrera le cipher avec **Flag=C^d(mod N)**.
 ## Challenge
-```
+```py
 N = 299414541696079057892313324025675176540717914391016340476887410756223595067
 e = 65537
 c = 4411661085097543909849318376631746681150427615454967763654513675784095561
