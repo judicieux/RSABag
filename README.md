@@ -6,9 +6,6 @@ Explication du fonctionnement de RSA à l'aide d'un challenge.
 ```e```: Public key exponent<br/>
 ```d```: Private key exponent<br/>
 ```c```: Ciphertext<br/>
-**Todo list**
-- zfil()
-- ljust()
 ## Sommaire
 D'abord on va factoriser **N** (modulus) en **p** et **q**. On obtiendra **p** et **q** les deux nombres premiers.<br/>
 Ensuite on déterminera **ΦN = (p−1) * (q−1)**.<br/>
