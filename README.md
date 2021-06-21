@@ -1,10 +1,10 @@
 # RSABag
 Explication du fonctionnement de RSA à l'aide d'un challenge.
 ## Sommaire
-D'abord on va factoriser **N** (modulus) en **p** et **q**. On obtiendra **p** et **q** les deux nombres premiers.
-Ensuite on déterminera **ΦN = (p−1) * (q−1)**.
-Puis on dérivera **d** de **e** et **PHI**.
-Ensuite on déchiffrera le cipher avec **Flag=C^d(mod N)**.
+D'abord on va factoriser **N** (modulus) en **p** et **q**. On obtiendra **p** et **q** les deux nombres premiers.<br/>
+Ensuite on déterminera **ΦN = (p−1) * (q−1)**.<br/>
+Puis on dérivera **d** de **e** et **PHI**.<br/>
+Ensuite on déchiffrera le cipher avec **C^d(mod N)**.<br/>
 ## Challenge
 ```py
 N = 299414541696079057892313324025675176540717914391016340476887410756223595067
