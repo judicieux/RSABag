@@ -1,5 +1,14 @@
 # RSABag
 Explication du fonctionnement de RSA à l'aide d'un challenge.
+## Manuel
+```p,q```: Two very large primes
+```N```: Modulus, n = p*q
+```e```: Public key exponent
+```d```: Private key exponent
+```c```: Ciphertext
+**Todo list**
+- zfil()
+- ljust()
 ## Sommaire
 D'abord on va factoriser **N** (modulus) en **p** et **q**. On obtiendra **p** et **q** les deux nombres premiers.<br/>
 Ensuite on déterminera **ΦN = (p−1) * (q−1)**.<br/>
