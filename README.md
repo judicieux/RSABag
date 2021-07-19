@@ -8,7 +8,7 @@ Explication du fonctionnement de RSA à l'aide d'un challenge.
 ```c```: Ciphertext<br/>
 ## Sommaire
 D'abord on va factoriser **N** (modulus) en **p** et **q**. On obtiendra **p** et **q** les deux nombres premiers.<br/>
-Ensuite on déterminera **ΦN = (p−1) * (q−1)**.<br/>
+Ensuite on déterminera *ΦN = (p−1) * (q−1)*.<br/>
 Puis on dérivera **d** de **e** et **PHI**.<br/>
 Ensuite on déchiffrera le cipher avec **C^d(mod N)**.<br/>
 ## Challenge
